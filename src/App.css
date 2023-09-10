@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+.bg{
+  background-image:url("/public/bg.jpg") ;
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* filter: blur(5px); */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-around;
+  gap: 20px;
+  padding: 10px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 92vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.about{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.do{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1,h2,h3,h4,p{
+  margin: 0;
+  font-weight: 100;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+h1{
+  font-weight: 500;
+  background-color: rgba(226, 222, 222, 0.582);
+  padding: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  align-self: center;
+}
+.input{
+  font-size: small;
+  padding: 8px;
+  width: 260px;
+  border-radius: 0;
+  border-style:solid;
+  border-color: rgb(73, 73, 73);
+  border-width: 0.5px;
+}
+.sbtn{
+  font-size: small;
+  padding: 8px;
+  width:fit-content;
+  border-radius: 0;
+  background-color:chocolate;
+  border-style: none;
+}
+.end{
+  justify-self: flex-end;
+}
+p{
+  font-size: smaller;
+}
+.sbtn:active, .mealbtn:active{
+  background-color:#ff9f43 ;
+}
+.sbtn:hover, .mealbtn:hover{
+  cursor: pointer;
+  background-color: rgb(240, 182, 36);
 }
